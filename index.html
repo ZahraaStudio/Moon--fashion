@@ -1,16 +1,14 @@
-
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZAHRAA STUDIO</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
-      background: linear-gradient(-45deg, #000000, #1a1a1a, #d4af37, #111);
+      background: linear-gradient(-45deg, #000, #1a1a1a, #d4af37, #111);
       background-size: 400% 400%;
       animation: gradientBG 10s ease infinite;
       color: #fff;
@@ -21,98 +19,133 @@
       min-height: 100vh;
       text-align: center;
       padding: 20px;
-    }
+    }@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
+@keyframes clickEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
 
-    .logo img {
-      width: 400px;
-      max-width: 80%;
-      margin-bottom: 20px;
-    }
+.logo img {
+  width: 350px;
+  max-width: 80%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 
-    h1 {
-      color: #d4af37;
-      margin-bottom: 40px;
-      font-size: 2.2rem;
-    }
+h1 {
+  color: #d4af37;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
 
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-      max-width: 300px;
-    }
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+}
 
-    .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #fff;
-      color: #000;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 40px;
-      font-size: 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
-    }
+.button-wrapper {
+  position: relative;
+}
 
-    .button img {
-      width: 24px;
-      height: 24px;
-      margin-left: 10px;
-    }
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 12px 20px;
+  border: 1px solid #d4af37;
+  border-radius: 40px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+  cursor: pointer;
+}
 
-    .button:hover {
-      background-color: #d4af37;
-      color: #000;
-      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
-    }
+.button img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.3rem;
-      }
+.button:hover {
+  background-color: #d4af37;
+  color: #000;
+}
 
-      .button {
-        font-size: 0.95rem;
-        padding: 10px 16px;
-      }
+.dots {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: #d4af37;
+}
 
-      .button img {
-        width: 20px;
-        height: 20px;
-      }
-    }
+@media (max-width: 600px) {
+  h1 { font-size: 1.3rem; }
+  .button { font-size: 0.95rem; padding: 10px 16px; }
+  .button img { width: 20px; height: 20px; }
+}
+
   </style>
 </head>
-<body>
-
-  <div class="logo">
-    <a class="https://ibb.co/Pzsk8Q0x"><img src="https://i.ibb.co/gFbYCVhy/file-000000003d48620a9a545c81b8bf35e5.png" alt="Zahraa Studio Logo">
-  </div>
-
-  <h1>أهلاً بك في ZAHRAA STUDIO</h1>
-
-  <div class="buttons">
-    <a class="button" href="https://wa.me/201204194540" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp"> واتساب 1
+<body>  <div class="logo">
+    <a href="https://www.facebook.com/share/1DuEaxYhW3/" target="_blank">
+      <img src="https://i.ibb.co/gFbYCVhy/file-000000003d48620a9a545c81b8bf35e5.png" alt="Zahraa Studio Logo">
     </a>
-    <a class="button" href="https://wa.me/201286815625" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp"> واتساب 2 / اتصال
-    </a>
-    <a class="button" href="https://www.facebook.com/share/1DuEaxYhW3/" target="_blank">
-      <img src="https://img.icons8.com/ios-filled/50/1877F2/facebook--v1.png" alt="Facebook"> صفحتنا على فيسبوك
-    </a>
-  </div>
+  </div>  <h1>أهلاً بكم في ZAHRAA STUDIO</h1>  <div class="buttons">
+    <div class="button-wrapper">
+      <a class="button" href="https://wa.me/201204194540" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp"> واتساب 1
+      </a>
+      <div class="dots" onclick="navigator.share ? navigator.share({text:'تواصل معنا على واتساب', url: 'https://wa.me/201204194540'}) : copyLink('https://wa.me/201204194540')">⋮</div>
+    </div><div class="button-wrapper">
+  <a class="button" href="https://wa.me/201286815625" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp"> واتساب 2 / اتصال
+  </a>
+  <div class="dots" onclick="navigator.share ? navigator.share({text:'تواصل معنا على واتساب', url: 'https://wa.me/201286815625'}) : copyLink('https://wa.me/201286815625')">⋮</div>
+</div>
 
-</body>
+<div class="button-wrapper">
+  <a class="button" href="https://www.facebook.com/share/1DuEaxYhW3/" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/1877F2/facebook--v1.png" alt="Facebook"> صفحتنا على فيسبوك
+  </a>
+  <div class="dots" onclick="navigator.share ? navigator.share({text:'تابع صفحتنا على فيسبوك', url: 'https://www.facebook.com/share/1DuEaxYhW3/'}) : copyLink('https://www.facebook.com/share/1DuEaxYhW3/')">⋮</div>
+</div>
+
+  </div>  <audio id="clickSound">
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/01/audio_d10a86e277.mp3?filename=mouse-click-153941.mp3" type="audio/mpeg">
+  </audio>  <script>
+    const buttons = document.querySelectorAll('.button');
+    const clickSound = document.getElementById('clickSound');
+
+    buttons.forEach(button => {
+      button.addEventListener('mousedown', () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+        button.style.animation = 'clickEffect 200ms ease';
+      });
+      button.addEventListener('mouseup', () => {
+        button.style.animation = '';
+      });
+    });
+
+    function copyLink(url) {
+      navigator.clipboard.writeText(url);
+      alert("تم نسخ الرابط إلى الحافظة");
+    }
+  </script></body>
 </html>
